@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/currency_cell_height"
+                android:padding="@dimen/currency_cell_padding">
+
+    <ImageView
+        android:id="@+id/flagIcon"
+        android:layout_width="@dimen/flag_icon_size"
+        android:layout_height="@dimen/flag_icon_size"
+        android:layout_marginEnd="@dimen/currency_cell_internal_margin"
+        tools:src="@drawable/flag_gp"/>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/flagIcon"
+        android:textStyle="bold"
+        tools:text="AUS"/>
+
+    <com.juztoss.revolut.view.UserCatcherEditText
+        android:id="@+id/valueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:minWidth="0dp"
+        android:maxWidth="@dimen/currency_cell_max_value_width"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:gravity="end"
+        tools:text="123.45"/>
+
+</RelativeLayout>

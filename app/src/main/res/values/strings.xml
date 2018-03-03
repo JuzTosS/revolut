@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">revolut</string>
+    <string name="currency_format">%.2f</string>
+</resources>
